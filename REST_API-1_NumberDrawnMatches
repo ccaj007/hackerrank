@@ -1,0 +1,30 @@
+#!/bin/python3
+
+import math
+import os
+import random
+import re
+import sys
+
+
+
+#
+# Complete the 'getNumDraws' function below.
+#
+# The function is expected to return an INTEGER.
+# The function accepts INTEGER year as parameter.
+#
+
+def getNumDraws(year):
+    # Write your code here
+
+if __name__ == '__main__':
+    fptr = open(os.environ['OUTPUT_PATH'], 'w')
+
+    year = int(input().strip())
+
+    result = getNumDraws(year)
+
+    fptr.write(str(result) + '\n')
+
+    fptr.close()

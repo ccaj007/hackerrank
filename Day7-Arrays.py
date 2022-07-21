@@ -1,4 +1,5 @@
-N = int(input())
-A = input()
+if __name__ == '__main__':
+    n = int(input().strip())
 
-print(A[::-1])
+    arr = list(map(int, input().rstrip().split()))
+    print(*arr[::-1], sep=' ')
